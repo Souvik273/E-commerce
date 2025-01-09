@@ -22,6 +22,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 import PaypalReturnPage from "./pages/shopping-view/paypal-return";
 import PaymentSuccessPage from "./pages/shopping-view/payment-success";
 import SearchProducts from "./pages/shopping-view/search";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const { user, isAuthenticated, isLoading } = useSelector(
@@ -92,6 +93,7 @@ function App() {
         <Route path="/unauth-page" element={<UnauthPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <Footer/>
     </div>
   );
 }
